@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', Verdana,sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+header{
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    height: 45px;
+    width: 100vw;
+}
+
+
+
+.hero{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-left: 5vw;
+    height: 100vh;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.hero-pic img{
+    height: 100vh;
+}
+
+.hero-quote-p{
+    font-size: 1.5em;
+}
+
+.hero-quote-title {
+    font-size: 1.5em;
+
+}
+
+.hero-quote-name{
+    font-size: 4em;
+    color: #A4B494;
+    font-weight: bold;
+}
+
+.profile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    background-color: #A4B494;
+    padding: 20px 5px 20px 5px;
+}
+
+.my-story h2{
+    color: #3B5249;
+}
+
+.my-story{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #3B5249;
+    max-width: 70%;
+    
+}
+
+.personal-info{
+    max-width: 30%;
+    color: #3B5249;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 15vh;
+    z-index: 0;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: underline;
+    color: white;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+    color: lightsalmon;
+}
+
+@media screen and (max-width: 768px){
+	
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        height: 115vh;
+    }
+
+    .hero-pic img{
+        height: 70vh;
+    }
+
+    .hero-quote p{
+        font-size: 1em;
+    }
+
+    .hero-quote h1{
+        font-size: 3em;
+    }
+
+    .profile{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .personal-info{
+        padding-top: 20px;
+    }
+
+}
